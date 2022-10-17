@@ -19,21 +19,21 @@
     <h1>Rock Paper Scissors game</h1>
     <h2>Choose Rock Paper or Scissors</h2>
     <div class="chooseBlock">
-      <div id="PlayerChoiceRock" class="gameCard rock">
+      <div onclick="playerChoiceRockF()" id="PlayerChoiceRock" class="gameCard rock">
         <div class="ImgBox">
           <img src="./img/rock.png" alt="rock option">
           <div class="colorCircle colorCircle1"></div>
         </div>
         <h2>ROCK</h2>
       </div>
-      <div id="PlayerChoicePaper" class="gameCard paper">
+      <div  onclick="playerChoicePaperF()" id="PlayerChoicePaper" class="gameCard paper">
         <div class="ImgBox">
            <img src="./img/paper.png" alt="paper option">
            <div class="colorCircle colorCircle2"></div>
         </div>
         <h2>PAPER</h2>
       </div>
-      <div id="PlayerChoiceScissors" class="gameCard scissors">
+      <div onclick="playerChoiceScissorsF()" id="PlayerChoiceScissors" class="gameCard scissors">
         <div class="ImgBox">
           <img src="./img/scissors.png" alt="scissors option">
           <div class="colorCircle colorCircle3"></div>
@@ -43,7 +43,9 @@
     </div>
   </section>
 <section>
-  <h2>Battle zone</h2>
+  <div id="playerChoice"></div>
+  <div id="BattleZone"></div>
+  <div id="opponentChoice"></div>
 </section>
 
   <section class="opponentChoice">
