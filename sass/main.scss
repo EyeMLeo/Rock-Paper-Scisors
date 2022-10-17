@@ -1,0 +1,166 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ubuntu:ital,wght@0,400;1,700&display=swap');
+@import 'reset.css';
+
+        $color1:#FFD666;
+        $color2:#66FFD6;
+        $color3:#D666FF;
+        $colorx:#ff6666;
+
+        $enemycolor1:#ad6a6a;
+        $enemycolor2:#b45454;
+        $enemycolor3:#b37b7b;
+
+        $htmlColor:#fff4f4;
+
+
+
+        
+
+html{
+    --mainColor: #ffffff;
+    --secondaryColor:#007bff;
+    --mainTextColor: #000020;
+    --secondarytextColor:#808080;
+
+
+
+
+
+
+}
+// SETTING FOR ALL
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    // background: linear-gradient(180deg, #e6d5ff 0%, #ffcece 100%);
+height: 100vh;
+    h2{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+
+
+}
+
+
+.gameSection{
+
+.chooseBlock{
+    text-align: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;;
+
+}
+
+
+.ImgBox{
+    position: relative;
+    max-width: 100%;
+
+    .colorCircle{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index:-1;
+    }
+
+    .colorCircle1{
+        background-color: $color1;
+    }
+    .colorCircle2{
+        background-color: $color2;
+    }
+    .colorCircle3{
+        background-color: $color3;
+    }
+
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+}
+
+
+.gameCard{
+transition-duration: 0.3s;
+img{
+    transition: ease-out 0.2s;
+}
+
+&:hover{
+    transform: scale(1.1); 
+    img{
+        rotate: 60deg;
+    }
+}
+
+&:active{
+    transform: scale(1.5);
+    transition-duration: 0.05s;
+    .colorCircle{
+        background-color: $colorx;
+    }
+
+}
+
+
+}
+}
+// Enemy section
+.opponentChoice{
+
+    .chooseBlock{
+        text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;
+    
+    }
+    
+    
+    .ImgBox{
+        position: relative;
+        max-width: 100%;
+    
+        .colorCircle{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index:-1;
+        }
+    
+        .colorCircle1{
+            background-color: $enemycolor1;
+        }
+        .colorCircle2{
+            background-color: $enemycolor1;
+        }
+        .colorCircle3{
+            background-color: $enemycolor1;
+        }
+    
+    
+    img{
+        max-width: 100%;
+        height: 100%;
+    }
+    }
+    
+
+    }
